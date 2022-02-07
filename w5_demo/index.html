@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W5D1 - Forms & Tables Demo </title>
+</head>
+<body>
+    <h1>Basic Form Demo</h1>
+
+    <h2>Form w/o Table</h2>
+
+    <!--text field for manual entry by user - value becomes what user types into box before submitting-->
+
+    <form>
+        <!--lables are used to match up with input elements-->
+        <!--
+            for attribue connects labels with input
+                MUST MATCH input's name attribute
+        -->
+
+        <lable>First Name: </lable>
+        <input type="text" name="First Name" id="firstname">
+
+        <!--form elements are inline, so use <br> so separate them-->
+        <br>
+
+        <lable>Last Name: </lable>
+        <input type="text" name="Last Name" id="lastname">
+
+        <br>
+
+        <!--
+            required attribute means user MUST fill in that elements or form will not submit
+        -->
+
+        <lable>Email: </lable>
+        <input type="text" name="Email" id="email" required>
+
+        <br>
+        <br>
+
+        <input type="submit" value="SUBMIT">
+
+
+
+
+
+
+
+    </form>
+
+
+
+    
+
+
+    <h2>Form w/ Table</h2>
+
+    <!--form comes FIRST!-->
+    <form method="GET" action="w2bio/w2_bio.html">
+
+        <table>
+
+            <!--thead an be used for colum headers-->
+
+
+            <!--<tbody> is REQUIRED inside of the <table>-->
+
+                <tbody>
+
+                    <tr><!-- table ROW; should include one
+                        <td> for every possible column, leave 
+                        blank when no info for that row-->
+
+                        <td><!--first data cell in row (left)-->
+                            <label for="firstname">First Name</label>
+                        </td>
+
+
+                        <td><!-- second data cell in row (right)-->
+                            <input type="text" id="firstname" name="firstname" maxlength="50">
+
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="lastname">Lat Name</label>
+                        </td>
+
+
+                        <td>
+                            <input type="text" id="lastname" name="lastname" maxlength="50">
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+
+
+                        <td>
+                            <input type="text" id="email" name="ema" maxlength="50">
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="comments">Comments: </label>
+                        </td>
+
+
+                        <td>
+                            <textarea name="comments" rows="10" cols="21" placeholder="Your comments here...">You can populate the textbox but user will need to delete</textarea>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!--Non text input elements-->
+                    <!--
+                        select elements creates a drop-down menu
+                    -->
+                    <tr>
+                        <td>
+                            <label for="favecolor">Pick Your Favorite Colort: </label>
+                        </td>
+
+
+                        <td>
+                            <!--similar to list types: containing elements and then indiv options from menu-->
+
+                            <!--each option must have a value attribute so data can be passed from form accurately-->
+                            <select name="favecolor">
+
+                                <option value="red">Red</option>
+                                <option value="orange">Orange</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="indigo">Indigo</option>
+                                <option value="violet">Violet</option>
+
+
+
+
+                            </select>
+
+                        </td>
+
+                    </tr>
+
+                    
+
+                    <!--radio buttons are a type of input, they are circular only ONE can be chosen out of set
+                    (set is determined by the name attribute values)-->
+                    <tr>
+                        <td>
+                            <label for="study">Program of Study: </label>
+
+                        </td>
+
+                        
+                        <td>
+                            <input type="radio" name="study" value="SE">Software Engineering <br>
+                            <input type="radio" name="study" value="CYB"> Cybersecurity <br>
+                            <input type="radio" name="study" value="NE"> Network Engineering <br>
+                            <input type="radio" name="study" value="WB"> Web Developer 
+                            
+
+
+
+                    <tr>
+                        <!--checkboxes allow for multiple responses whe name value are different-->
+                        <td>
+                            <label for="vehicle">Select Your Vehicles</label>
+                        </td>
+
+
+                        <td>
+
+                            <input type="checkbox" value="vehicle1" value="car">Car
+                            <input type="checkbox" value="vehicle2" value="ship">Ship
+                            <input type="checkbox" value="vehicle3" value="horse">Horse
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+
+                <tr>
+                    <td>
+                        <label for="date">Date: </label>
+                    </td>
+
+
+                    <td>
+                        <input type="date" name="date">
+
+                    </td>
+
+                </tr>
+
+
+
+
+
+
+                <tr>
+                    <td>
+
+                    </td>
+
+
+                    <td>
+                        <input type="submit" value="SUBMIT">
+
+                    </td>
+
+                </tr>
+
+
+
+        </table>
+
+
+
+    </form>
+</body>
+</html>
