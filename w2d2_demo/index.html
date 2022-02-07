@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2 | Demo </title>
+
+    <!-- in document styling in CSS -->
+
+    <style>
+        
+        /*must write with CSS syntax in here!*/
+
+
+        /*SELECTING in CSS & Javascript: select specific element(s) on a page:
+            *by ELEMENT type                    ex: body, div, p
+            *by ID attribute                    ex: #wrapper, #nav, #footer
+            *by CLASS attribute                 ex: coming in Week 3 :]
+        */
+
+        div { /*applies to ALL divs in the page */ 
+        
+            border: 1px solid black;
+            padding: 10px; /*adds 10 px of space to all 4 sides inbetween content & the border */
+            margin: 5px; /*adds 5px of space to all 4 sides inbetween an element's border and its neighbording elements*/ 
+        
+        
+        
+        
+        }
+
+        #wrapper {/* # specifies ID name, only applies to single elements with that ID */ 
+
+            background-color: white
+        
+        }
+
+        #school {
+
+
+            background-color: yellow
+        }
+
+
+        #nav, #footer {
+
+
+            background-color: teal
+        }
+
+    </style>
+
+</head>
+<body style="background-color: gray; ">
+    <div id = "wrapper"> <!-- this div holdas and "wraps around/together" all content on the page -->
+
+        <h1> Farid Hasanov </h1>
+
+        <!-- Navigation -->
+        <div id = "nav">
+
+            <!-- linking to OUTSIDE {remote!} pages [these are NOT a part of the website, they exist somewhere else online]-->
+            <!-- you need the full Uniform Reosurce Locator / online path-->
+            <a href="https://www.meca.edu/ " target="_blank"> Visit MECA</a>
+            <!-- href holds the URL of website linking to-->
+            <!--target="_blank" oppents the page in a new browser tab-->
+            <!--linking to INTERNAL {relatiove!} pages [these are within the site ie project root directory]-->
+            <!--usually you only need the URL if the folder is set up correctly -->
+
+            <a href="page2.html" target="_blank">Visit Page 2</a>
+
+            <!-- IN-PAGE "jump" links: linking to a sections within the actual page itself -->
+            <a href="">BIO</a>
+            <a href="">SCHOOLS</a>
+            <a href="">HOBBIES</a>
+            <a href="">Bottom of Page</a>
+        </div> <!-- Nav -->
+
+        <!-- Content / Section -->
+
+        <div id = "bio">
+
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on </p>
+            <!--img tags for immage content on page-->
+            <!--REMOTE/ABSOLUTE image file paths - from somewhere online NOT our root dircetory-->
+            <img src="https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_FMjpg_UX1000_.jpg" alt="Game of Thrones" style="width: 300px; ">
+
+            <!-- RELATIVE img path example-->
+            <img src="images/eu.jpg" alt ="Game of Thrones " style="width:306px"> 
+
+        </div> <!-- school -->
+
+        <div id = "school">
+            
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+
+
+            </ol>
+       
+        </div> <!-- Bio -->
+
+        <div id = "hobbies">
+
+
+            <h2>hobbies</h2>
+
+            <ol>
+                <li>Hobbie 1</li>
+                <li>Hobbie 2</li>
+                <li>Hobbie 3</li>
+
+        </div>
+
+
+        <!-- Footer -->
+
+        <div id = "footer">
+
+            <a href="">Back to Top</a>
+
+            <p>&copy; 2022 | F HASANOV | SE111.32</p>
+
+
+
+        </div> <!-- Footer -->
+
+    </div>
+
+
+</body>
+</html>
