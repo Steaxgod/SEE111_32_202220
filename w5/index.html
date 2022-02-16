@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Farid Hasanov">
+    <meta name="description" content="Week 5 | Tables and Forms">
+    <title>Birthday Party Registration Form</title>
+</head>
+
+<body>
+    
+    <h1>Birthday Party Registration Form</h1>
+
+
+    <form method="GET" action="/w5/index.html">
+
+        <table style="width: 700px;">
+
+            <tbody>
+
+                <tr> <!--Parent First Name-->
+                    
+                    <td>
+                        <label for="parentfirstname">Parent/Guardian First  Name</label>
+                    </td>
+
+
+                    <td>
+                        <input type="text" id="parentfirstname" name="parentfirstname" maxlength="50">
+                    </td>
+
+
+                </tr>
+
+                <tr> <!--Parent Last Name-->
+
+                    <td>
+                        <label for="parentlastname">Parent/Guardian Last Name</label>
+                    </td>
+
+
+                    <td>
+                        <input type="text" id="parentlastname" name="parentlastname" maxlength="50">
+
+                    </td>
+
+                </tr>
+
+                <tr> <!--Child First Name-->
+                    
+                    <td>
+                        <label for="firstname">Child's First Name</label>
+                    </td>
+
+                    <td>
+                        <input type="text"  id="firstname" name="firstname" maxlength="50">
+                    </td>
+                </tr>
+
+
+                <tr> <!--Child Age-->
+
+                    <td>
+                        <label for="childage">Child's  Age</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="childage" name="childage" maxlength="10">
+                    </td>
+
+                </tr>
+
+                <tr> <!--Heading #2-->
+                    <td>
+                        <h2>Date  and Time</h2>
+                    </td>
+                </tr>
+
+                <tr> <!--Date-->
+                   
+                    <td>
+                        <label for="date">Date:</label>
+                    </td>
+
+
+                    <td>
+                        <input type="date" id="time" name="date">
+
+                    </td>
+
+                </tr>
+           
+                
+                <tr> <!--Time-->
+
+                    <td>
+                        <label for="time">Time: </label>
+                    </td>
+
+                    <td>
+                        <input type="time" id="time" name="time">
+                    </td>
+
+                </tr>
+
+                
+                <tr> <!--Number of  Guests-->
+
+                    <td>
+                        <label for="guests">Number of Guests</label>
+                    </td>
+
+                    <td>
+                        <input type="text" id="guests" name="guests" maxlength="100">
+                    </td>
+
+                </tr>
+
+                <tr> <!--Heading #3-->
+                    <td>
+                        <h2>Food</h2>
+                    </td>
+                </tr>
+
+                <tr> <!--Size-->
+                    <td>
+                        <label for="size">Size</label>
+                    </td>
+                
+                    <td>
+                        <input type="radio"  name="size"  value="sm">sm
+                        <input type="radio"  name="size"  value="med">sm
+                        <input type="radio"  name="size"  value="lg">sm
+                    </td>
+                </tr>
+
+                <tr> <!--Drinks-->
+
+                    <td>
+                        <label  for="drinks">Drinks</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox"  name="drinks"  value="coke">Coke<br>
+                        <input type="checkbox"  name="drinks"  value="sprite">Sprite<br>
+                        <input type="checkbox"  name="drinks"  value="fruit punch">Fruit Punch<br>
+                        <input type="checkbox"  name="drinks"  value="lemonade">Lemonade<br>
+                        <input type="checkbox"  name="drinks"  value="icedtea">Iced Tea<br>
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    
+                    <td>
+                        <label for="cake" ></label>
+                    </td>
+
+                    <td>
+                        <input type="searchbar" name="cake"  value="cake">I'll bring my own
+                    </td>
+
+
+                </tr>
+
+
+
+
+
+
+
+            </tbody>
+
+
+
+            <tr> <!--Submit-->
+                <td>
+
+                </td>
+
+
+                <td>
+                    <input type="submit" value="SUBMIT">
+
+                </td>
+
+            </tr>
+
+
+
+
+
+        </table>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
