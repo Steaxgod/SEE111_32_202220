@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Farid Hasanov">
+    <meta name ="description" content="Week 6 | JavaScript Pay Calculator">
+    <title>JavaScript Pay Calculator</title>
+</head>
+<body>
+
+    <h1>JavaScript Pay Calculator</h1>
+
+    <script>
+    
+    //--------Info for assigment.---------//
+
+    //    Gross Pay: $1000.00
+    //    Uncle Sam's Share: $200.00
+    //    Net Pay: $800.00
+    
+    //    Use the .toFixed(2) method
+
+    //    Tax rate: 20% --> 0.02
+    //    Gather information by using prompt()
+
+    //    After getting info "( using prompt()" ) it is STRING -->
+    //    --> Convert it to (int or float) by using comand Number()
+
+    //    Next line ---> '\n'
+
+    //     use one alert() function as well as three console.log() --> 
+    //     --> calls to display this information
+
+
+        // What I have to gather.
+
+            // user’s hourly pay
+            // hours worked
+
+            // tax rate for a two-week period
+                // ? --> What's mean for 2 week ? if tax rate is 0.02
+                
+        // While loop
+
+        
+        var tn = 0
+        var tg = 0
+        var ttr = 0
+
+
+        var ans = 'y'
+        while (ans === 'y') 
+        {
+
+            // Inputs        
+            var hp = prompt("Enter your hourly pay : $")  // hp stands for hourly pay
+            var hw = prompt("Enter your hours worked: ")  // hw stands for hours worked
+            
+            var tr = Number(0.2)        // I guess it's 0.2 if 20% [ 20/100 = 0.2 ]
+            // Converting
+            hp = Number(hp)
+            console.log(hp) //---> Check
+            
+            hw = Number(hw)
+            console.log(hw) //---> Check
+
+            var gross = hp * hw         // With taxes
+            console.log(gross) //---> Check
+
+            var txr = gross * tr        // Taxe's
+            console.log(txr) //---> Check
+
+            var net = gross - txr
+            console.log(net) //---> Check
+
+            // Display
+
+
+            //     --> alert(`Your Taxes is: ${txr.toFixed(2)}`)
+            //     --> alert(`Your Gross is: ${gross.toFixed(2)}`)
+            alert(`Your Taxes is: ${txr.toFixed(2)}\nYour Gross is: ${gross.toFixed(2)}\nYour NET is: ${net.toFixed(2)}`)
+
+            var ans = prompt("Would you like to add another week ? [y/n] ")
+
+
+            
+                
+            var tn = tn + net //tn stands for Total NET
+            var tg = tg + gross //tg stands for Total Gross
+            var ttr = ttr + txr //ttr stands for Total Tax Rate in $
+        
+        }
+
+            if (ans === 'n')
+            {
+
+                alert(`Your Total Tax Rate $: ${ttr}\nYour Total Gross $${tg}\nYour Total NET $${tn}`)
+
+                alert(`Thanks for using my Calculator \n See soon :)`)
+                exit()
+            }
+            else
+            {
+                alert(`!!!ERROR!!!`)
+
+                
+            }
+            
+                    
+
+    </script>
+
+</body>
+</html>
