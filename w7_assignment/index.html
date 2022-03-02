@@ -88,7 +88,7 @@
         </table>    
 
                 <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-                <input id="enter-button" type="button" id="" value="Enter">
+                <input id="enter-button" type="button" value="Enter">
 
                 <br>
                 <br>
@@ -128,10 +128,10 @@
                     hours --> hours worked, #hours
                     rate --> hourly rate, #rate */
                     
-                    var fname = `#first`
-                    var lname =  `#last`
-                    var hours = `#hours`
-                    var rate = `#rate`
+                    var fname = document.querySelector(`#first`).value
+                    var lname = document.querySelector(`#last`).value
+                    var hours = document.querySelector(`#hours`).value
+                    var rate = document.querySelector(`#rate`).value
 
                     //console.log() all four values
                     
@@ -144,7 +144,7 @@
                     var full = fname + ` ` + lname
 
                     //console.log() the full name value
-                    console.log('#full')
+                    console.log(full)
 
 
                     //convert both hours and rate to Number() data types
@@ -157,30 +157,42 @@
                     //create gross, taxAmount, net variables and store corresponding data to them
                     //use a tax percentage of 20% (.2)
                     
+                    var gross = hours * rate
+                    var taxAmount = gross * .2
+                    var net = gross - taxAmount
+                    var taxRate = .2
 
                     //console.log() all three processed values, rounded to the second decimal place
                     //console.log(.toFixed(2))
 
+                    console.log(gross.toFixed(2))
+                    console.log(taxAmount.toFixed(2))
+                    console.log(net.toFixed(2))
 
                     //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-                    var finalMessage = `#full` +  `  ` +  `#hours` + `   ` + `#rate  `
-                    console.log('#finalMessage')
+                    var finalMessage = full +  `  ` +  hours + `   ` +  rate
+                    console.log(finalMessage)
                 
                     //create a new var called 'info' and store the entire #info *HTML element* to it
 
+                    var info = document.querySelector(`#info`)
 
                     //create a new var called 'num' and store the entire #check *HTML element* to it
                     
+                    var num = document.querySelector(`#check`)
 
                     //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
 
-
+                    info.innerHTML = finalMessage
 
                     //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
 
-
+                    num.innerHTML = `${gross} ${taxAmount} ${net}`
 
                     //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
+                    
+                    document.querySelector("#submit").addEventListener(`click`, submitNow)
+
                     //when the #submit button is clicked, the submitNow function should run
 
                 
