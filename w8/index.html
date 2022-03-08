@@ -42,7 +42,7 @@
 
 		//Make an array to store the people
 		
-		var people = [' ',' ',' ']
+		var people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
 		
@@ -71,29 +71,20 @@
 			    //1. first: will be a string that uses the first Input's value
 				//2. last: will be a string that uses the last Input's value
 
-            var person =[ 
-				{
-				first: `Cersei`,
-				last: `Lanister`,
-				},
-				
-				{
-				first: `Arya`,
-				last: `Stark`,
-				},
-
-				{
-				first: `Daenerys`,
-				last: `Targaryen`
-				}
+            var person =
+			{
+				first: fname.value,
+				last: lname.value
+			}
 				//end of person object
-			]
-
+			
+			console.log(person.first)
+			console.log(person.last)
 
 
 			//Add the person object into the people array by using the .push() array method.
 			
-			person.push()
+			people.push(person.first + ` ` + person.last)
 
 			//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
@@ -115,23 +106,25 @@
 
 			//create a variable called 'output' that has an empty string value stored to 
 			
+			var output = ` `
 
 			//Loop through the objects in the people array
-		//	for()
+			for(let i = 0; i < people.length; i++)
             {
 
 				//Loop through each property in the object
-				//for(key in people[i])
+				for(key in people[i])
                 {
 					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-				
+
+
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				
+					
 
 
 			}//end of loop going through people array to edit 'output'
