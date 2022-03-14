@@ -61,8 +61,10 @@
 			_________________________
 			FIRST: Daenerys
 			LAST: Targaryen
-			_________________________
 		--------------------------------------------------------*/
+
+		first.push('Cersei','Arya','Daenerys')
+		last.push('Lannister','Stark','Targaryen')
 
 		function calcAndDisplay(e)
 		{
@@ -84,7 +86,7 @@
 
 			//Add the person object into the people array by using the .push() array method.
 			
-			people.push(person.first + ` ` + person.last)
+			people.push(person)
 
 			//Bubble sort people on the last name
 			for(let i=0; i < people.length-1; i++)
@@ -111,7 +113,8 @@
 			//Loop through the objects in the people array
 			for(let i = 0; i < people.length; i++)
             {
-
+				output += `<h3> Info : ${people[i].first}:</h3>`
+				
 				//Loop through each property in the object
 				for(key in people[i])
                 {
@@ -120,9 +123,15 @@
 					//FIRST: Ivan
 					//LAST: Drago
 
-
+					output += `<p><b>${key.toUpperCase()}</b>: ${people[i][key]}</p>`
+			
 
                 }
+
+				output += `<hr>`
+
+
+			
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
 					
 
@@ -132,7 +141,7 @@
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				
-
+				document.querySelector(`#output`).innerHTML = output
 
 
 		}
