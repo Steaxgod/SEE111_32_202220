@@ -67,7 +67,7 @@ namespace  Week1_Sample1
                     break; // Break is good in this sutiation 'cause it's been created for purpose.
             }
 
-            dbResult = (Double)intResult;
+            dbResult = (Double)intResult; // Double is like a float
 
 
             // PLUS
@@ -78,19 +78,19 @@ namespace  Week1_Sample1
             // MINUS
             else if (strOperand == "MINUS")
             {
-                Console.WriteLine("$\n\nThe sum of  {intNum1}  and  {intNumb2}  equals:{dbResult}");                
+                Console.WriteLine($"\n\nThe sum of  {intNum1}  and  {intNumb2}  equals:{dbResult}");                
 
             }
             // DIVIDE
             else if (strOperand == "DIVIDE")
             {
-                Console.WriteLine("$\n\nThe quotient of  {intNum1}  and  {intNumb2}  equals:{dbResult}");                   
+                Console.WriteLine($"\n\nThe quotient of  {intNum1}  and  {intNumb2}  equals:{dbResult}");                   
 
             }
             // MULTIPLY
             else if (strOperand == "MULTIPLY")
             {
-                Console.WriteLine("$\n\nThe product of  {intNum1}  and  {intNumb2}  equals:{dbResult}");                  
+                Console.WriteLine($"\n\nThe product of  {intNum1}  and  {intNumb2}  equals:{dbResult}");                  
 
             }
 
