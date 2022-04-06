@@ -39,14 +39,89 @@ h2 {
 
 }
 
+h3 {
+    
+    margin-left: 1300px; 
+    color: orangered;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+h4 {
+    margin-bottom: 450px;
+    margin-left: 1650px; 
+    color: orangered;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#h4csgo {
+
+    margin-bottom: 50px;
+    margin-left: 1675px; 
+    color: orangered;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
 
 #mainp{
 
     color: orangered;
     font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-left: 1000px;
-    margin-bottom: -340px;
+    margin-left: 400px;
+    
+
+}
+
+#edup {
+
+    color: orangered;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 400px;
+    margin-top: -420px;
+    margin-bottom: 300px;
+
+}
+
+#ppb{
+    width: 30%;
+    color: orangered;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 400px;
+    margin-top: -420px;
+    margin-bottom: 300px;
+
+
+}
+
+#papex{
+    width: 30%;
+    color: orangered;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 400px;
+    margin-top: -420px;
+    margin-bottom: 300px;
+
+
+}
+
+#pcsgo{
+    width: 30%;
+    color: orangered;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 400px;
+    margin-top: -570px;
+    margin-bottom: 300px;
+
 
 }
 
@@ -55,11 +130,78 @@ h2 {
     
     width: 200px;
     border: solid orangered 1px;
-    margin-bottom: 40px;
-    margin-top: 10px;
-    margin-left: 1595px;
+    margin-top: -300px;
+    margin-bottom: 316px;
+    margin-left: 1600px;
 
 }
+
+#hhs {
+
+    width: 500px;
+    border: solid orangered 1px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 1300px;
+
+}
+
+#apex {
+
+    width: 500px;
+    border: solid orangered 1px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 1300px;
+
+}
+
+#pb {
+
+    width: 500px;
+    border: solid orangered 1px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 1300px;
+
+}
+
+#csgo {
+
+    width: 500px;
+    border: solid orangered 1px;
+    margin-bottom: 300px;
+    margin-top: 50px;
+    margin-left: 1300px;
+
+}
+
+/*Instalation*/
+#instcsgo{
+    
+    
+    margin-top: -250px;
+    margin-bottom: 500px;
+    width: 150px;
+    margin-left: 1660px;
+}
+
+#instpb{
+    margin-top: -1050px;
+    margin-bottom: 500px;
+    width: 150px;
+    margin-left: 1660px;
+
+}
+
+#instapex{
+    margin-top: -850px;
+    margin-bottom: 500px;
+    width: 150px;
+    margin-left: 1660px;
+
+}
+/*-----------------------*/
 
 
 a {
@@ -103,4 +245,8 @@ hr {
     margin-bottom: -35px;
     width: 25px;
 
+}
+
+.hide {
+    display:none;
 }
