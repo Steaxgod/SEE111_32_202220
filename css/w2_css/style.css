@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* ~ Menu ~ */
+/* 1. Body & Div  */
+/* 2. Headings & Footer & Copy */
+/* 3. Prints & Links */
+/* 4. Icons,Gif,Img */
+/* 5. Notes */
+
+/* Body & Div */
+html{
+
+    height: 100%;
+}
+
+body {
+    
+    /* Size */
+    background-image: url(sourse/background-image/Black-gif-background-3-GIF-Images-Download.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    height: 100%;
+
+}
+
+#container {
+
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    height: 100%;
+
+}
+
+/* Headings & Footer & Copy */
+h1 {
+    /* Size */
+    text-align: center;
+    font-size: 40px;
+
+    /* Style */
+    color:snow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    /* Size */
+    font-size: 25px;
+    margin-left: 300px;
+
+    /* Style */
+    color:snow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#copy {
+
+    /* Size */
+    margin-top: -40px;
+    font-size: 15px;
+    margin-left: 10px;
+
+    /* Style */
+    color: snow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+/* Prints & Links */
+a {
+    /* Size */
+    margin-left: 15px;
+    font-size: 25px;
+    word-spacing: 550px;
+
+    /* Style */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: snow;
+    text-decoration: none; /* Turn off underline */
+}
+
+p {
+    
+    /* Size */
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 100px;
+    word-spacing: 4px;
+
+    /* Style */
+    color: snow;
+}
+
+/* Icons,Gif,Img */
+
+#iconf {
+
+    /* Size */
+    width: 40px;
+    margin-left: 1825px;
+    
+    
+}
+
+#ava {
+
+    /* Size */
+    width: 200px;
+
+    /* Style */
+    border: solid rgb(19, 17, 17) 4px;
+
+}
+
+
+/* Notes */
+/*
+
+1.  @media (min-width: 1000px) {} - Some notes
+
+
+
+*/
