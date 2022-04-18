@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{
+    box-sizing:border-box ;
+}
+
+body, html {
+
+    margin: 0;
+    height: 100%;
+    background-color: snow;
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+main {
+
+    background-color: hotpink;
+    width: 80%;
+    min-height: 300px;
+
+}
+
+header {
+
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: baseline;
+    padding: 0 20px 0 20px;
+
+}
+
+i {
+
+    font-size: 90px;
+    margin: 0 20px 0 20px;
+
+}

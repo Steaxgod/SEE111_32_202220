@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 /* ~ Menu ~ */
 /* 1. Body & Div  */
@@ -8,6 +9,10 @@
 /* 5. Notes */
 
 /* Body & Div */
+*{
+    box-sizing:border-box ;
+}
+
 html{
 
     height: 100%;
@@ -33,6 +38,12 @@ body {
 
 }
 
+#edu {
+
+    margin-left: 1150px;
+
+}
+
 /* Headings & Footer & Copy */
 h1 {
     /* Size */
@@ -48,10 +59,90 @@ h2 {
     /* Size */
     font-size: 25px;
     margin-left: 300px;
+    margin-top: 60px;
 
     /* Style */
     color:snow;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#ap {
+
+    /* Size */
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 60px;
+
+    /* Style */
+    color:snow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#apdw {
+
+    /* Size */
+    font-size: 15px;
+    margin-left: 490px;
+    margin-top: 60px;
+
+    /* Style */
+    color:red;
+    font-family: 'Open Sans', sans-serif;   
+
+}
+
+#pointb {
+
+    /* Size */
+    font-size: 20px;
+    margin-left: 1300px;
+    margin-top: 60px;
+
+    /* Style */
+    color:snow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#pbdw{
+
+    /* Size */
+    font-size: 15px;
+    margin-left: 1600px;
+    margin-top: 60px;
+
+    /* Style */
+    color:red;
+    font-family: 'Open Sans', sans-serif;
+        
+}
+
+#cs {
+
+    /* Size */
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 60px;
+
+    /* Style */
+    color:snow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+#csdw {
+
+    /* Size */
+    font-size: 15px;
+    margin-left: 410px;
+    margin-top: 60px;
+
+    /* Style */
+    color:red;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 #copy {
@@ -88,9 +179,35 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 100px;
     word-spacing: 4px;
-
+    
     /* Style */
     color: snow;
+}
+
+#mainp {
+
+    margin-top: 130px;
+    margin-bottom: -180px;
+
+}
+
+#papex {
+
+    width: 500px;
+
+}
+
+#ppb {
+
+    margin-left: 1300px;
+    width: 500px;
+
+}
+
+#pcsgo {
+
+    width: 500px;
+
 }
 
 /* Icons,Gif,Img */
@@ -104,16 +221,90 @@ p {
     
 }
 
-#ava {
+#instapex {
 
-    /* Size */
-    width: 200px;
-
-    /* Style */
-    border: solid rgb(19, 17, 17) 4px;
+    width: 100px;
+    margin-left: 500px;
+    margin-top: -100;
 
 }
 
+#instpb {
+
+    width: 100px;
+    margin-left: 1610px;
+    margin-top: -100;
+
+}
+
+#instcsgo {
+
+    width: 100px;
+    margin-left: 405px;
+    margin-top: -100;
+
+}
+
+#ava {
+
+    /* Size */
+    width: 150px;
+    margin-left: 550px;
+    margin-bottom: 247px;
+
+    /* Style */
+    opacity: 70%;
+    border: solid red
+
+}
+
+#hhs {
+
+    /* Size */
+    margin-top: 50px ;
+    width: 500px;
+
+    /* Style */
+    opacity: 70%;
+    border: solid red
+}
+
+#apex {
+
+    /* Size */
+    width: 500px;
+    margin-left: 100px;
+
+    /* Style */
+    opacity: 70%;
+    border: solid red
+
+}
+
+#pb {
+
+    /* Size */
+    width: 400px;
+    margin-left: 1300px;
+    
+    /* Style */
+    opacity: 70%;
+    border: solid red
+
+}
+
+#csgo {
+
+    /* Size */
+    width: 400px;
+    margin-top: 40px;
+    
+    
+    /* Style */
+    opacity: 70%;
+    border: solid red;
+
+}
 
 /* Notes */
 /*
