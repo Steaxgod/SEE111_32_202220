@@ -6,7 +6,8 @@
 /* 2. Headings & Footer & Copy */
 /* 3. Prints & Links */
 /* 4. Icons,Gif,Img */
-/* 5. Notes */
+/* 5. JS + CSS */
+/* 6. Notes */
 
 /* Body & Div */
 *{
@@ -21,7 +22,7 @@ html{
 body {
     
     /* Size */
-    background-image: url(sourse/background-image/Black-gif-background-3-GIF-Images-Download.gif);
+    background-image: url(sourse/background-image/3.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -305,6 +306,41 @@ p {
     border: solid red;
 
 }
+
+/* 6. JS + CSS */
+
+#bio {
+
+    transition: all 1s;
+    opacity: auto;
+    height: auto;
+
+}
+
+#edu {
+
+    transition: all 1s;
+    opacity: auto;
+    height: auto;
+    
+}
+
+#hob {
+
+    transition: all 1s;
+    opacity: auto;
+    height: auto;
+    
+}
+
+
+.hide {
+
+    opacity: 0;
+    height: 0;
+
+}
+
 
 /* Notes */
 /*
