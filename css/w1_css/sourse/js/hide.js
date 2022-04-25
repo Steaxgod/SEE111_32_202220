@@ -5,7 +5,7 @@ var hob = document.querySelector(`#hob-link`)
 var all = document.querySelector(`#all-link`)
 
 // Divs
-var main = document.querySelector(`#main `)
+var biojs = document.querySelector(`#bio `)
 var education = document.querySelector(`#education`)
 var hobbies = document.querySelector(`#hobbies`)
 
@@ -16,7 +16,7 @@ function showBio(e)
 {
     //keeps link from navigating to another URL
     e.preventDefault()
-    main.classList.remove(`hide`)
+    biojs.classList.remove(`hide`)
     education.classList.add(`hide`)
     hobbies.classList.add(`hide`)
    
@@ -30,7 +30,7 @@ function showEdu(e)
     e.preventDefault()
     
     education.classList.remove(`hide`)
-    main.classList.add(`hide`)
+    biojs.classList.add(`hide`)
     hobbies.classList.add(`hide`)
    
 
@@ -43,7 +43,7 @@ function showHob(e)
     e.preventDefault()
     hobbies.classList.remove(`hide`)
     education.classList.add(`hide`)
-    main.classList.add(`hide`)
+    biojs.classList.add(`hide`)
    
 
 }
@@ -55,7 +55,7 @@ function showAll(e)
     e.preventDefault()
     hobbies.classList.remove(`hide`)
     education.classList.remove(`hide`)
-    main.classList.remove(`hide`)
+    biojs.classList.remove(`hide`)
    
 
 }
